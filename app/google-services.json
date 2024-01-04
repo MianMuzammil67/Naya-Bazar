@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916012963321",
+    "project_id": "apna-bazar-eac32",
+    "storage_bucket": "apna-bazar-eac32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916012963321:android:3e296927f25cd83d649928",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB3b78PXsgmer5MgjoVnQR_U3gSugIvU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
