@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:916012963321:android:3e296927f25cd83d649928",
+        "mobilesdk_app_id": "1:916012963321:android:80c60f43b3f1fbbe649928",
         "android_client_info": {
-          "package_name": "com.example.myapplication"
+          "package_name": "com.example.nayabazar"
         }
       },
       "oauth_client": [],

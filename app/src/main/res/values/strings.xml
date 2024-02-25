@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Naya Bazaar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_loading_details">Loading details…</string>
+    <string name="dummy_name">Sarah Jones</string>
+    <string name="txt_add_to_cart">Add to Cart</string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="already_have_account">Already have account? Sign In</string>
+    <string name="txt_password">password</string>
+    <string name="txt_forgot_password">Forgot Password?</string>
+    <string name="txt_enter_your_data">Please enter your data to continue</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="txt_username">Username</string>
+    <string name="txt_e_mail">E Mail</string>
+    <string name="dummy_price">$20</string>
+    <string name="txt_description">Description</string>
+    <string name="txt_product_categories">Product Categories</string>
+    <string name="txt_popular_products">Popular Products</string>
+    <string name="txt_dummy_tittle"> Men\'s Tie-Dye T-Shirt Nike Sportswear </string>
+    <string name="item_count">3</string>
+    <string name="txt_continue_shopping">Continue Shopping</string>
+    <string name="txt_go_to_orders">Go to Orders</string>
+    <string name="txt_order_confirmed">Order Confirmed!</string>
+    <string name="txt_order_confirmed_h2">Your order has been confirmed, we will send you confirmation email shortly.</string>
+    <string name="txt_log_out">Log Out</string>
+    <string name="txt_check_out">Check Out</string>
+    <string name="txt_address">Delivery Address</string>
+    <string name="txt_enter_address">Add Address</string>
+    <string name="txt_your_address">Your Address</string>
+    <string name="txt_card_number">Enter Card Number</string>
+    <string name="txt_costumer_support">Costumer Support</string>
+    <string name="txt_pay_now">Pay Now</string>
+    <string name="txt_shipping_cost">Shipping Cost</string>
+    <string name="txt_subtotal">Subtotal</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_cash_on_delivery">Cash on Delivery</string>
+    <string name="txt_credit_card">Credit/Debit Card</string>
+    <string name="stars">**** **** **** ****</string>
+    <string name="txt_place_order">Place Order</string>
+    <string name="txt_add_card_details">Add Card Details</string>
+    <string name="txt_payment_method">Payment Method</string>
+    <string name="txt_order_conformation">Are you sure you want to place order? This action cannot be undone</string>
+    <string name="txt_you_are_about_to_palce_an_order">You are about to palce an order</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_cancel">Cancel</string>
+
+
 </resources>

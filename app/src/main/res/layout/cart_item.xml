@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="12dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tvTittle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/txt_dummy_tittle"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardview"
+            app:layout_constraintTop_toTopOf="@+id/cardview" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/dummy_price"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tvTittle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle" />
+
+        <ImageView
+            android:id="@+id/ivUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardview"
+            app:layout_constraintStart_toEndOf="@+id/cardview"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+            app:srcCompat="@drawable/ic_up" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@string/item_count"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivUp"
+            app:layout_constraintStart_toEndOf="@+id/ivUp"
+            app:layout_constraintTop_toTopOf="@+id/ivUp" />
+
+        <ImageView
+            android:id="@+id/ivDown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_down"
+            app:layout_constraintBottom_toBottomOf="@+id/ivUp"
+            app:layout_constraintStart_toEndOf="@+id/tvCount"
+            app:layout_constraintTop_toTopOf="@+id/ivUp" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivDown"
+            app:srcCompat="@drawable/ic_delete" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

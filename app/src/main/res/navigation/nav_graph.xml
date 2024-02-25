@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signUpFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nayabazar.view.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.nayabazar.view.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="product"
+            app:argType="com.example.nayabazar.model.Product" />
+        <action
+            android:id="@+id/action_detailFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.nayabazar.view.fragments.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <argument
+            android:name="CategoryName"
+            app:argType="string"
+            />
+
+        <action
+            android:id="@+id/action_productFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.nayabazar.view.fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <argument
+            android:name="product"
+            app:argType="com.example.nayabazar.model.Product" />
+        <action
+            android:id="@+id/action_cartFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.nayabazar.view.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"/>
+<!--            app:popUpTo="@id/profileFragment"-->
+<!--            />-->
+<!--            app:inclusive="false"-->
+<!--            />-->
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.nayabazar.view.fragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.nayabazar.view.fragments.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.example.nayabazar.view.fragments.CheckOutFragment"
+        android:label="fragment_check_out"
+        tools:layout="@layout/fragment_check_out" >
+<!--        <argument-->
+<!--            android:name="price"-->
+<!--            app:argType="string" />-->
+        <action
+            android:id="@+id/action_checkOutFragment_to_adrressFragment"
+            app:destination="@id/adrressFragment" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+        <action
+            android:id="@+id/action_checkOutFragment_to_fragment_order_confirmed"
+            app:destination="@id/fragment_order_confirmed" />
+        <argument
+            android:name="cartProducts"
+            app:argType="com.example.nayabazar.model.Product[]" />
+        <!--        <argument-->
+<!--            android:name="adress"-->
+<!--            app:argType="string" />-->
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_order_confirmed"
+        android:name="com.example.nayabazar.view.fragments.OrderConfirmedFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order_confirmed" >
+        <action
+            android:id="@+id/action_fragment_order_confirmed_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adrressFragment"
+        android:name="com.example.nayabazar.view.fragments.AdrressFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_adrressFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.nayabazar.view.fragments.PaymentFragment"
+        android:label="PaymentFragment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_checkOutFragment"
+            app:destination="@id/checkOutFragment" />
+    </fragment>
+</navigation>
