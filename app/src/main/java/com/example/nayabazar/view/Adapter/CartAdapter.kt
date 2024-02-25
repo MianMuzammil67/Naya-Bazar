@@ -14,7 +14,7 @@ import com.example.nayabazar.viewModel.CartViewModel
 
 class CartAdapter(private val viewModel: CartViewModel) :
     RecyclerView.Adapter<CartAdapter.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CartAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
             CartItemBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -23,7 +23,7 @@ class CartAdapter(private val viewModel: CartViewModel) :
             )
         )
     }
-    override fun onBindViewHolder(holder: CartAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = differ.currentList[position]
         var quantity = currentItem.productQuantity.toInt()
 
@@ -77,7 +77,7 @@ class CartAdapter(private val viewModel: CartViewModel) :
             return oldItem == newItem
         }
     }
-    var differ = AsyncListDiffer(this, differCallback);
+    var differ = AsyncListDiffer(this, differCallback)
 
     class ViewHolder(var binding: CartItemBinding) : RecyclerView.ViewHolder(binding.root)
 

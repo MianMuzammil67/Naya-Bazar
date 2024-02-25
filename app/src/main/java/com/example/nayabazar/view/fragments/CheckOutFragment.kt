@@ -41,7 +41,6 @@ class CheckOutFragment : Fragment(R.layout.fragment_check_out) {
         binding = FragmentCheckOutBinding.bind(view)
         orderViewModel = ViewModelProvider(this)[OrderViewModel::class.java]
         cartViewModel = ViewModelProvider(this)[CartViewModel::class.java]
-//        val cartProduct = args.cartProducts
          val cartProduct = args.cartProducts
 
         viewLifecycleOwner.lifecycleScope.launch {

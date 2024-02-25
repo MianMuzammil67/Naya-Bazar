@@ -1,7 +1,6 @@
 package com.example.nayabazar.view.fragments
 
 import android.os.Bundle
-import android.text.InputType
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController

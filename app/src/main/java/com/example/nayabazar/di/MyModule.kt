@@ -1,7 +1,6 @@
 package com.example.nayabazar.di
 
 import com.example.nayabazar.model.Address
-import com.example.nayabazar.model.Order
 import com.example.nayabazar.model.Payment
 import dagger.Module
 import dagger.Provides

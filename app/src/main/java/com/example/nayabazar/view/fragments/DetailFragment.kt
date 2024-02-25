@@ -1,5 +1,4 @@
 package com.example.nayabazar.view.fragments
-import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast

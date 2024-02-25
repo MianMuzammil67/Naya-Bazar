@@ -16,7 +16,7 @@ import javax.inject.Singleton
      @Provides
      @Singleton
      fun provideFirebaseAuthInstance() : FirebaseAuth {
-         return FirebaseAuth.getInstance();
+         return FirebaseAuth.getInstance()
 
      }
     @Provides
